@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Sehat - Klinik Kecantikan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Menambahkan font Roboto -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            font-size: 16px; /* Ukuran font yang lebih besar */
+        }
+
+        header {
+            background-color: #3e6e4c; /* Mengganti warna biru menjadi hijau */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            position: relative; /* Memungkinkan posisi absolut untuk anak */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px; /* Ukuran font judul yang lebih besar */
+        }
+
+        .image-container {
+            display: flex; /* Mengatur kontainer gambar menggunakan flexbox */
+            justify-content: space-around; /* Menyebar gambar secara merata */
+            flex-wrap: wrap; /* Memungkinkan gambar untuk membungkus ke baris berikutnya */
+            gap: 20px; /* Jarak antar kotak */
+            margin: 20px 0; /* Jarak atas dan bawah untuk kontainer gambar */
+        }
+
+        .image-box {
+            background-color: #fff; /* Warna latar belakang kotak */
+            border-radius: 5px; /* Sudut kotak yang sedikit membulat */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Bayangan kotak */
+            text-align: center; /* Memusatkan teks di dalam kotak */
+            padding: 10px; /* Padding dalam kotak */
+            width: 200px; /* Lebar kotak */
+            height: 250px; /* Tinggi kotak untuk seragam */
+            overflow: hidden; /* Menghindari gambar yang meluap dari kotak */
+        }
+
+        img {
+            width: 100%; /* Mengatur gambar agar lebar 100% dari kotak */
+            height: 150px; /* Mengatur tinggi gambar agar seragam */
+            object-fit: cover; /* Memastikan gambar memenuhi area tanpa merusak proporsinya */
+            border-radius: 5px; /* Sudut gambar yang sedikit membulat */
+            transition: transform 0.2s; /* Transisi untuk efek hover */
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Memperbesar gambar saat hover */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #3e6e4c; /* Mengganti warna biru menjadi hijau */
+            color: white;
+        }
+
+        .about {
+            margin-top: 20px;
+            text-align: center; /* Mengatur teks rata tengah */
+        }
+
+        .about h3 {
+            margin-bottom: 10px;
+            font-size: 20px; /* Ukuran font untuk subjudul */
+        }
+
+        .about p {
+            margin-bottom: 15px;
+        }
+
+        /* Menambahkan style untuk daftar poin */
+        .about ul {
+            list-style-type: disc; /* Mengatur tipe list menjadi bulatan */
+            padding-left: 20px; /* Memberi padding di sebelah kiri */
+            text-align: left; /* Mengatur teks rata kiri */
+        }
+
+        /* Style untuk shape latar belakang */
+        .shape {
+            position: absolute;
+            top: 0; /* Posisi di atas konten */
+            left: 50%;
+            transform: translateX(-50%); /* Memusatkan shape secara horizontal */
+            width: 100%; /* Lebar shape 100% */
+            height: 150px; /* Tinggi shape */
+            background: rgba(62, 110, 76, 0.5); /* Warna hijau transparan */
+            border-radius: 0 0 50% 50%; /* Membuat bentuk setengah lingkaran di bawah */
+            z-index: -1; /* Mengirim shape ke belakang */
+        }
+
+        .schedule {
+            font-weight: bold; /* Membuat teks lebih tebal */
+            font-size: 18px; /* Ukuran font yang lebih besar untuk menonjolkan */
+            margin-top: 20px;
+            color: #3e6e4c; /* Warna hijau untuk mencocokkan tema */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Klinik Sehat</h1>
+        <nav>
+            <ul>
+                <li><a href="landing.page.html">Beranda</a></li>
+                <li><a href="hal.login.html">Login</a></li>
+                <li><a href="treatment.html">Treatment</a></li>
+                <li><a href="hal.tabel.html">Saran Kecantikan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="shape"></div> <!-- Menambahkan shape di latar belakang -->
+        <h2>Selamat Datang di Klinik Kecantikan</h2>
+        <p>Klinik kami menyediakan layanan kecantikan terbaik untuk Anda dan keluarga, dengan berbagai pilihan perawatan yang dirancang untuk memenuhi kebutuhan setiap individu dan memastikan hasil yang memuaskan.</p>
+        
+        <div class="about">
+            <h3>Tentang Klinik Kecantikan</h3>
+            <p>Kami percaya bahwa:</p>
+            <ul>
+                <li>Setiap orang memiliki keindahan alami yang harus dirayakan.</li>
+                <li>Tim profesional kami siap membantu Anda menemukan perawatan yang tepat.</li>
+                <li>Dari perawatan wajah hingga perawatan tubuh, semua tersedia untuk pengalaman yang menyenangkan.</li>
+            </ul>
+            <p class="schedule">Jadwalkan sesi Anda dan mulailah perjalanan menuju kecantikan yang lebih sehat!</p> <!-- Menonjolkan teks -->
+        </div>
+
+        <div class="image-container">
+            <div class="image-box">
+                <img src="gambar1.jpg" alt="Perawatan Wajah">
+                <p>Perawatan Wajah: Menyediakan berbagai perawatan wajah untuk kulit bersinar.</p>
+            </div>
+            <div class="image-box">
+                <img src="gambar2.jpg" alt="Perawatan Rambut">
+                <p>Perawatan Rambut: Layanan perawatan rambut untuk semua jenis rambut.</p>
+            </div>
+            <div class="image-box">
+                <img src="gambar3.jpg" alt="Perawatan Tubuh">
+                <p>Perawatan Tubuh: Program perawatan tubuh untuk kesehatan dan kecantikan.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Alamat: Jl. Kesehatan No. 123, Jakarta</p>
+        <p>Telepon: (021) 123-4567</p>
+    </footer>
+</body>
+</html>
